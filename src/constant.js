@@ -47,4 +47,4 @@ export const typeOptions = [
     value: "staj",
   },
 ];
-export const sortOptions = ["Seçiniz", "a-z", "z-a", "En Yeni", "En eski"];
+export const sortOptions = ["Seçiniz", "a-z", "z-a", "En Yeni", "En Eski"];

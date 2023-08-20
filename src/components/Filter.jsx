@@ -21,9 +21,12 @@ const Filter = () => {
   }
 
   // Sıralamayı ele alır
-  const handleSort = (e) => {
-    dispatch(filterBySort(e.target.value));
+  const clear = (e) => {
+    setValues({search : "", status : "Seçiniz", type : "Seçiniz", sort : "Seçiniz"});
+    dispatch(clearFilters());
   };
+
+
   return (
     <section className="filter-sec">
       <h2>Filtreleme Formu</h2>
@@ -59,7 +62,7 @@ const Filter = () => {
             ))}
           </select>
         </div>
-        <button onClick={() => dispatch(clearFilters())} className="button">
+        <button onClick={clear} className="button">
           Filtreleri Temizle
         </button>
         <button type="submit" className="button">Filtrele</button>

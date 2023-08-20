@@ -88,6 +88,7 @@ const jobSlice = createSlice({
               if (a.company > b.company) return -1;
               return 0;
             });
+            break;
   
           case "En Yeni":
             filteredJobs.sort(
@@ -99,6 +100,7 @@ const jobSlice = createSlice({
             filteredJobs.sort(
               (a, b) => new Date(a.date) - new Date(b.date)
             );
+            break;
   
           default:
             break;
@@ -108,15 +110,6 @@ const jobSlice = createSlice({
 
 
       state.filteredJobs = filteredJobs;
-
-
-
-
-
-
-
-
-
 
     },
     filterBySort: (state, action) => {
