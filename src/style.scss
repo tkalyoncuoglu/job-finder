@@ -1,0 +1,203 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000000c3;
+  font-weight: 400;
+  min-height: 100vh;
+  color: white;
+  font-family: Poppins;
+}
+// Header Alanı
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+  div {
+    display: flex;
+    gap: 20px;
+    a {
+      color: white;
+
+      text-decoration: none;
+      font-size: 19px;
+      &:hover {
+        color: darkred;
+      }
+    }
+
+    .active {
+      color: red;
+    }
+  }
+}
+
+// Listeleme Sayfası
+.job-count {
+  margin-left: 5px;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.list-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 50px;
+  gap: 50px;
+}
+.job-card {
+  background: gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px #1f3dff;
+    box-shadow: 5px 5px 15px 5px #1f3dff;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .head {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+    .letter {
+      height: 60px;
+      width: 60px;
+      background: rgb(26, 0, 128);
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      font-size: 30px;
+    }
+    .info {
+      font-size: 20px;
+    }
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    .field {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &:hover {
+        color: red;
+      }
+      img {
+        width: 30px;
+      }
+    }
+    .status {
+      button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: white;
+        font-family: Poppins;
+        border: none;
+        font-size: 15px;
+      }
+      .Devam {
+        background: blue;
+        &:hover {
+          background: darkblue;
+          transition: 0.3s ease;
+        }
+      }
+      .Rededildi {
+        background: red;
+        &:hover {
+          background: darkred;
+          transition: 0.3s ease;
+        }
+      }
+      .Mülakat {
+        background: green;
+        &:hover {
+          background: darkgreen;
+          transition: 0.3s ease;
+        }
+      }
+      .Tamamlandı {
+        background: orange;
+        &:hover {
+          background: darkorange;
+          transition: 0.3s ease;
+        }
+      }
+      .Yeni {
+        background: rgb(47, 137, 255);
+        &:hover {
+          background: rgb(23, 99, 187);
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+//  Ekleme Sayfası
+
+.add-sec {
+  box-shadow: 0px 22px 70px 4px red;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 25px;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  .field input,
+  .field select {
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+}
+.button {
+  width: 140px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background: black;
+  margin-top: 35px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 0 10px red;
+  }
+}
+// Filtreleme Form Alanı
+
+.filter-sec {
+  // Ekleme alanının stillerini miras alma extend ile alınıyor
+  @extend .add-sec;
+  margin: 100px auto;
+  form {
+    margin-top: 10px;
+  }
+}

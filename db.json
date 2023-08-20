@@ -1,0 +1,112 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "position": "FrontEnd Developer",
+      "company": "Udemig",
+      "location": "ankara",
+      "status": "Devam ediyor",
+      "type": "Tam Zamanlı",
+      "date": "10/11/2022"
+    },
+    {
+      "id": 2,
+      "position": "FrontEnd Developer",
+      "company": "TechSolutions",
+      "location": "İstanbul",
+      "status": "Devam Ediyor",
+      "type": "Tam Zamanlı",
+      "date": "05/09/2023"
+    },
+    {
+      "id": 3,
+      "position": "UI/UX Designer",
+      "company": "DesignHub",
+      "location": "İzmir",
+      "status": "Rededildi",
+      "type": "Yarı Zamanlı",
+      "date": "07/25/2023"
+    },
+    {
+      "id": 4,
+      "position": "Front-End Engineer",
+      "company": "CodeCrafters",
+      "location": "Ankara",
+      "status": "Tamamlandı",
+      "type": "Serbest Çalışma",
+      "date": "03/14/2023"
+    },
+    {
+      "id": 5,
+      "position": "JavaScript Developer",
+      "company": "WebGenius",
+      "location": "İstanbul",
+      "status": "Devam Ediyor",
+      "type": "Tam Zamanlı",
+      "date": "11/30/2022"
+    },
+    {
+      "id": 6,
+      "position": "Front-End Designer",
+      "company": "PixelPerfection",
+      "location": "Ankara",
+      "status": "Yeni Başladı",
+      "type": "Tam Zamanlı",
+      "date": "06/12/2023"
+    },
+    {
+      "id": 7,
+      "position": "React Developer",
+      "company": "UIMagic",
+      "location": "İstanbul",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "date": "09/18/2022"
+    },
+    {
+      "id": 8,
+      "position": "Angular Developer",
+      "company": "WebMasters",
+      "location": "Ankara",
+      "status": "Tamamlandı",
+      "type": "Serbest Çalışma",
+      "date": "04/02/2023"
+    },
+    {
+      "id": 9,
+      "position": "Front-End Programmer",
+      "company": "CodeCreators",
+      "location": "İzmir",
+      "status": "Devam Ediyor",
+      "type": "Yarı Zamanlı",
+      "date": "08/09/2022"
+    },
+    {
+      "id": 10,
+      "position": "Front-End Architect",
+      "company": "DesignTech",
+      "location": "İstanbul",
+      "status": "Tamamlandı",
+      "type": "Uzaktan",
+      "date": "02/21/2023"
+    },
+    {
+      "id": 11,
+      "position": "HTML/CSS Developer",
+      "company": "WebCraft",
+      "location": "Ankara",
+      "status": "Yeni Başladı",
+      "type": "Yarı Zamanlı",
+      "date": "07/10/2023"
+    },
+    {
+      "position": "front end",
+      "company": "udemig",
+      "location": "gaziantep",
+      "status": "Yeni Başladı",
+      "type": "Yarı Zamanlı",
+      "id": "05ed5d5e-31a6-45fe-8d55-97430e2bd86d",
+      "date": "18.08.2023 22:32:41"
+    }
+  ]
+}
