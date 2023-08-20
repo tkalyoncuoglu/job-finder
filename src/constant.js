@@ -1,5 +1,9 @@
 export const statusOptions = [
   {
+    label: "Seçiniz",
+    value: "",
+  },
+  {
     label: "Mülakat",
     value: "mülakat",
   },
@@ -23,6 +27,10 @@ export const statusOptions = [
 
 export const typeOptions = [
   {
+    label: "Seçiniz",
+    value: "",
+  },
+  {
     label: "Tam Zamanlı",
     value: "tam-zamanlı",
   },
@@ -39,4 +47,4 @@ export const typeOptions = [
     value: "staj",
   },
 ];
-export const sortOptions = ["a-z", "z-a", "En Yeni", "En eski"];
+export const sortOptions = ["Seçiniz", "a-z", "z-a", "En Yeni", "En eski"];
