@@ -6,7 +6,9 @@ import { setJobs } from "../redux/jobslice";
 
 const JobList = () => {
   // Stora Abone Olmak için useSelector Kullanılır
-  const state = useSelector((store) => store);
+  const jobs = useSelector((store) => store.jobs);
+  const initialized = useSelector((store) => store.initialized);
+  const filteredJobs = useSelector((store) => store.filteredJobs);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -23,15 +25,15 @@ const JobList = () => {
     <div>
       <Filter />
       <h3 className="job-count">
-        Bulunan ({state?.jobs.length}) iş arasından (
-        {state?.filteredJobs.length}) tanesi görüntülüyoruz
+        Bulunan ({jobs.length}) iş arasından (
+        {filteredJobs.length}) tanesi görüntülüyoruz
       </h3>
 
       <section className="list-section">
-        {!state.initialized ? (
+        {!initialized ? (
           <p>Loading....</p>
         ) : (
-          state.filteredJobs.map((job, i) => (
+          filteredJobs.map((job, i) => (
             <div key={i} className="job-card">
               <div className="head">
                 <div className="letter">
